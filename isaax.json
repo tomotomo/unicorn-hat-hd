@@ -6,6 +6,6 @@
 	"license": "MIT",
 	"language": "",
 	"scripts": {
-		"start": "python -u main.py"
+		"start": "nodejs envar.js"
 	}
 }
