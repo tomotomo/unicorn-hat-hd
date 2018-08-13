@@ -4,6 +4,7 @@ import colorsys
 import signal
 import time
 from sys import exit
+import os
 
 try:
     from PIL import Image, ImageDraw, ImageFont
@@ -13,11 +14,7 @@ except ImportError:
 import unicornhathd
 
 def show():
-    try:
-        lines = os.environ.get('MESSAGE').split(',')
-    except:
-        print("Some Error")
-        exit(1)
+    lines = [os.environ.get('MESSAGE')]
 
     colours = [tuple([int(n * 255) for n in colorsys.hsv_to_rgb(x/float(len(lines)), 1.0, 1.0)]) for x in range(len(lines))]
 
