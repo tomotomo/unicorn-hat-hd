@@ -1,0 +1,6 @@
+{
+"license": "MIT",
+"scripts": {
+  "start": "python -u examples/text.py"
+  }
+}
