@@ -14,7 +14,7 @@ except ImportError:
 import unicornhathd
 
 def show():
-    message = [os.environ.get('MESSAGE')]
+    message = os.environ.get('MESSAGE')
     lines = message.split(",")
 
     colours = [tuple([int(n * 255) for n in colorsys.hsv_to_rgb(x/float(len(lines)), 1.0, 1.0)]) for x in range(len(lines))]
