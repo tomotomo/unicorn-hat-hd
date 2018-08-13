@@ -43,7 +43,7 @@ FONT = ("/usr/share/fonts/truetype/freefont/FreeSansBold.ttf", 12)
 #FONT = ("/usr/share/fonts/truetype/droid/DroidSans.ttf", 12)
 
 # sudo apt install fonts-roboto
-#FONT = ("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf", 10)
+FONT = ("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf", 10)
 
 unicornhathd.rotation(0)
 unicornhathd.brightness(1.0)
